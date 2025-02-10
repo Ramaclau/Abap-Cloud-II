@@ -1,0 +1,19 @@
+CLASS zcl_lab_22_student_426 DEFINITION INHERITING FROM zcl_lab_21_classroom_426
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    METHODS ASSIGN_STUDENT RETURNING VALUE(rv_studen) type string.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_lab_22_student_426 IMPLEMENTATION.
+  METHOD assign_student.
+    rv_studen = 'ONE'.
+  ENDMETHOD.
+
+ENDCLASS.

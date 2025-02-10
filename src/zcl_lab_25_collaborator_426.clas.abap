@@ -1,0 +1,18 @@
+CLASS zcl_lab_25_collaborator_426 DEFINITION INHERITING FROM zcl_lab_23_company_426
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    METHODS GET_CAPITAL RETURNING VALUE(rv_capital) TYPE string.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_lab_25_collaborator_426 IMPLEMENTATION.
+  METHOD get_capital.
+    rv_capital = '2'.
+  ENDMETHOD.
+
+ENDCLASS.

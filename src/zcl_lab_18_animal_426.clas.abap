@@ -1,0 +1,18 @@
+CLASS zcl_lab_18_animal_426 DEFINITION
+  PUBLIC
+
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+  METHODS WALK RETURNING VALUE(rv_walk) TYPE string.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_lab_18_animal_426 IMPLEMENTATION.
+  METHOD walk.
+    rv_walk = 'The animals walks'.
+  ENDMETHOD.
+
+ENDCLASS.
