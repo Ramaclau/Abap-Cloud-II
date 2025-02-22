@@ -14,10 +14,10 @@ CLASS zcl_09_citizen_426 DEFINITION
     CLASS-DATA product type string.
 ENDCLASS.
 
-CLASS zcl_09_citizen_426 IMPLEMENTATION.
-  METHOD set_id.
 
-  ENDMETHOD.
+
+CLASS ZCL_09_CITIZEN_426 IMPLEMENTATION.
+
 
   METHOD get_instance.
 
@@ -25,4 +25,8 @@ CLASS zcl_09_citizen_426 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
+  METHOD set_id.
+
+  ENDMETHOD.
 ENDCLASS.

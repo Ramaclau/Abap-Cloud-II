@@ -17,7 +17,11 @@ CLASS zcl_05_plant_426 DEFINITION INHERITING FROM zcl_04_company_426
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_05_plant_426 IMPLEMENTATION.
+
+
+CLASS ZCL_05_PLANT_426 IMPLEMENTATION.
+
+
   METHOD constructor.
 
     super->constructor( iv_quotation = iv_quotation ).
@@ -26,10 +30,10 @@ CLASS zcl_05_plant_426 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD set_company_code.
     super->set_company_code( iv_company = iv_company ).
     me->company_code = 'AABB'.
 
   ENDMETHOD.
-
 ENDCLASS.

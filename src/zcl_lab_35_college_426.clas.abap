@@ -1,0 +1,18 @@
+CLASS zcl_lab_35_college_426 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS ENROLL_STUDENT IMPORTING iv_name TYPE REF TO zcl_lab_34_student_426.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+   DATA name type REF TO zcl_lab_34_student_426.
+ENDCLASS.
+
+CLASS zcl_lab_35_college_426 IMPLEMENTATION.
+  METHOD enroll_student.
+    me->name = iv_name.
+  ENDMETHOD.
+
+ENDCLASS.

@@ -11,7 +11,9 @@ CLASS zcl_lab_14_grid_426 DEFINITION INHERITING FROM zcl_lab_13_view_426
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_14_grid_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_14_GRID_426 IMPLEMENTATION.
 
 
   METHOD constructor.
@@ -19,5 +21,4 @@ CLASS zcl_lab_14_grid_426 IMPLEMENTATION.
     super->constructor( iv_view_type = view_type ).
 
   ENDMETHOD.
-
 ENDCLASS.

@@ -1,0 +1,27 @@
+CLASS zcl_17_bp_426 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES zif_07_company_426.
+
+    ALIASES set_company_type for zif_07_company_426~set_company_type.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_17_BP_426 IMPLEMENTATION.
+
+
+  METHOD set_company_type.
+
+  ENDMETHOD.
+
+
+  METHOD zif_07_company_426~group.
+
+  ENDMETHOD.
+ENDCLASS.

@@ -10,9 +10,12 @@ CLASS zcl_lab_18_animal_426 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_18_animal_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_18_ANIMAL_426 IMPLEMENTATION.
+
+
   METHOD walk.
     rv_walk = 'The animals walks'.
   ENDMETHOD.
-
 ENDCLASS.

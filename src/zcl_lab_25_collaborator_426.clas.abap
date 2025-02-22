@@ -10,9 +10,12 @@ CLASS zcl_lab_25_collaborator_426 DEFINITION INHERITING FROM zcl_lab_23_company_
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_25_collaborator_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_25_COLLABORATOR_426 IMPLEMENTATION.
+
+
   METHOD get_capital.
     rv_capital = '2'.
   ENDMETHOD.
-
 ENDCLASS.

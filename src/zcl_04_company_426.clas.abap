@@ -21,25 +21,32 @@ CLASS zcl_04_company_426 DEFINITION
     data campany_atr type string.
 ENDCLASS.
 
-CLASS zcl_04_company_426 IMPLEMENTATION.
-  METHOD get_company_code.
-    ev_company = me->company_code.
-  ENDMETHOD.
 
-  METHOD get_currency.
-    ev_currency = me->currency.
-  ENDMETHOD.
 
-  METHOD set_company_code.
-    me->company_code = iv_company.
-  ENDMETHOD.
+CLASS ZCL_04_COMPANY_426 IMPLEMENTATION.
 
-  METHOD set_currency.
-    me->currency = iv_currency.
-  ENDMETHOD.
 
   METHOD constructor.
     me->quotation = iv_quotation.
   ENDMETHOD.
 
+
+  METHOD get_company_code.
+    ev_company = me->company_code.
+  ENDMETHOD.
+
+
+  METHOD get_currency.
+    ev_currency = me->currency.
+  ENDMETHOD.
+
+
+  METHOD set_company_code.
+    me->company_code = iv_company.
+  ENDMETHOD.
+
+
+  METHOD set_currency.
+    me->currency = iv_currency.
+  ENDMETHOD.
 ENDCLASS.

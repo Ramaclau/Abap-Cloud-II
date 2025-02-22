@@ -11,9 +11,12 @@ CLASS zcl_lab_21_classroom_426 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_21_classroom_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_21_CLASSROOM_426 IMPLEMENTATION.
+
+
   METHOD classroom.
     rv_classroom = 'Art'.
   ENDMETHOD.
-
 ENDCLASS.

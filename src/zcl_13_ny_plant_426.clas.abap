@@ -11,11 +11,14 @@ CLASS zcl_13_ny_plant_426 DEFINITION INHERITING FROM zcl_11_planr_426
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_13_ny_plant_426 IMPLEMENTATION.
+
+
+CLASS ZCL_13_NY_PLANT_426 IMPLEMENTATION.
+
+
   METHOD get_product_sl.
     data(lo_storage) = NEW zcl_12_storage_location_426(  ).
     lo_storage->product = 'PC'.
 
   ENDMETHOD.
-
 ENDCLASS.

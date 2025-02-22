@@ -13,9 +13,12 @@ CLASS zcl_lab_13_view_426 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_13_view_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_13_VIEW_426 IMPLEMENTATION.
+
+
   METHOD constructor.
     view_type = iv_view_type.
   ENDMETHOD.
-
 ENDCLASS.

@@ -10,11 +10,14 @@ CLASS zcl_12_storage_location_426 DEFINITION
     METHODS set_product IMPORTING iv_product TYPE string.
 ENDCLASS.
 
-CLASS zcl_12_storage_location_426 IMPLEMENTATION.
+
+
+CLASS ZCL_12_STORAGE_LOCATION_426 IMPLEMENTATION.
+
+
   METHOD set_product.
 
     product = iv_product.
 
   ENDMETHOD.
-
 ENDCLASS.

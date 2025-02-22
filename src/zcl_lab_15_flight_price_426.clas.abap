@@ -13,7 +13,11 @@ CLASS zcl_lab_15_flight_price_426 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_15_flight_price_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_15_FLIGHT_PRICE_426 IMPLEMENTATION.
+
+
   METHOD add_price.
     select from /DMO/FLIGHT
         FIELDS *
@@ -23,5 +27,4 @@ CLASS zcl_lab_15_flight_price_426 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

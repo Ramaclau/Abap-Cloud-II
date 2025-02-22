@@ -19,19 +19,10 @@ CLASS zcl_03_employ_426 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_03_employ_426 IMPLEMENTATION.
 
-  METHOD constructor.
 
-    me->employee_id = iv_employee_id.
+CLASS ZCL_03_EMPLOY_426 IMPLEMENTATION.
 
-  ENDMETHOD.
-
-  METHOD get_employee.
-
-    rv_employee_id = me->employee_id.
-
-  ENDMETHOD.
 
   METHOD class_constructor.
 
@@ -39,4 +30,17 @@ CLASS zcl_03_employ_426 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
+  METHOD constructor.
+
+    me->employee_id = iv_employee_id.
+
+  ENDMETHOD.
+
+
+  METHOD get_employee.
+
+    rv_employee_id = me->employee_id.
+
+  ENDMETHOD.
 ENDCLASS.

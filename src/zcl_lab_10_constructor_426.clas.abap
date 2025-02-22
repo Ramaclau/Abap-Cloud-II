@@ -20,14 +20,10 @@
 
 ENDCLASS.
 
-CLASS zcl_lab_10_constructor_426 IMPLEMENTATION.
 
-  METHOD constructor.
 
-    me->cont = iv_cont.
-    log = |{ log }-Instance Constructor { iv_cont }-->|.
+CLASS ZCL_LAB_10_CONSTRUCTOR_426 IMPLEMENTATION.
 
-  ENDMETHOD.
 
   METHOD class_constructor.
 
@@ -36,10 +32,18 @@ CLASS zcl_lab_10_constructor_426 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
+  METHOD constructor.
+
+    me->cont = iv_cont.
+    log = |{ log }-Instance Constructor { iv_cont }-->|.
+
+  ENDMETHOD.
+
+
   METHOD get_cont.
 
     ev_cont = me->cont.
 
   ENDMETHOD.
-
 ENDCLASS.

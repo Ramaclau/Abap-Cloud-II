@@ -10,10 +10,13 @@ CLASS zcl_lab_24_partner_426 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_24_partner_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_24_PARTNER_426 IMPLEMENTATION.
+
+
   METHOD get_company_capital.
     data(lo_comp) = NEW zcl_lab_23_company_426(  ).
     lo_comp->capital = '1'.
   ENDMETHOD.
-
 ENDCLASS.

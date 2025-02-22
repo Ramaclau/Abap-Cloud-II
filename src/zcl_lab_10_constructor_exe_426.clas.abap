@@ -12,7 +12,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_lab_10_constructor_exe_426 IMPLEMENTATION.
+CLASS ZCL_LAB_10_CONSTRUCTOR_EXE_426 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     out->write( zcl_lab_10_constructor_426=>log ).

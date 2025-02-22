@@ -11,9 +11,12 @@ CLASS zcl_lab_22_student_426 DEFINITION INHERITING FROM zcl_lab_21_classroom_426
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_22_student_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_22_STUDENT_426 IMPLEMENTATION.
+
+
   METHOD assign_student.
     rv_studen = 'ONE'.
   ENDMETHOD.
-
 ENDCLASS.
