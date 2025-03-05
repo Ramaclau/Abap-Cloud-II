@@ -295,14 +295,71 @@ CLASS zcl_04_exec_426 IMPLEMENTATION.
 *
 *    ENDDO.
 ***
-    SET HANDLER zcl_40_smpt_426=>on_new_mail.
+*    SET HANDLER zcl_40_smpt_426=>on_new_mail.
+*
+*    DO 3 TIMES.
+*      wait up to 1 seconds.
+*      zcl_39_mail_426=>compose_mail(  ).
+*    ENDDO.
+*
+*    out->write( zcl_40_smpt_426=>table_inbox ).
+***
+*    data(go_north_building) = new zcl_41_building_426(  ).
+*    data(go_south_building) = new zcl_41_building_426(  ).
+*    data(go_east_building)  = new zcl_41_building_426(  ).
+*    data(go_west_building)  = new zcl_41_building_426(  ).
+*
+*    data(go_access) = NEW zcl_42_access_426(  ).
+*
+**    set HANDLER go_access->on_blocked_entrance for all INSTANCES.
+*
+*    go_north_building->entry = 'NORTH'.
+*    go_north_building->clse_entry(  ).
+*    go_south_building->entry = 'SOUTH'.
+*    go_south_building->clse_entry(  ).
+*    go_east_building->entry = 'EAST'.
+*    go_east_building->clse_entry(  ).
+*    go_west_building->entry = 'WEST'.
+*    go_west_building->clse_entry(  ).
+*
+*    out->write( zcl_42_access_426=>table_blocked_entries ).
+***
+*    data(go_screen) = NEW zcl_lab_42_screen(  ).
+*    data(go_hor) = NEW zcl_lab_43_navigation(  ).
+*    data(go_ver) = NEW zcl_lab_43_navigation(  ).
+*
+*    set HANDLER go_hor->on_touch_screen FOR go_screen.
+*    go_hor->pos = '10'.
+*    go_ver->pos = '15'.
+*
+*    out->write( go_hor->pos ).
+*    out->write( go_ver->pos ).
+****
+*    data(go_comp) = NEW zcl_43_component_426(  ).
+*    go_comp->get_first( IMPORTING es_first = data(gv_first) ).
+***
+    data(lo_manage) = new zcl_45_manage_426(  ).
 
-    DO 3 TIMES.
-      wait up to 1 seconds.
-      zcl_39_mail_426=>compose_mail(  ).
-    ENDDO.
+    data: lv_result type i,
+          lv_nun1   type i value 10,
+          lv_num2   type i.
 
-    out->write( zcl_40_smpt_426=>table_inbox ).
+    TRY.
+*        lo_manage->check_user( sy-uname ).
+
+        lv_result = lv_nun1 / lv_num2.
+
+      CATCH zcx_45_auth_426 INTO data(lx_auth).
+       out->write( lx_auth->get_text(  ) ).
+
+       CATCH cx_sy_zerodivide into data(lv_zerodiv).
+        out->write( lv_zerodiv->get_text(  ) ).
+        lv_num2 = 2.
+        RETRY.
+
+   ENDTRY.
+
+   out->write( |FINISH: { lv_result }| ).
 
   ENDMETHOD.
 ENDCLASS.
