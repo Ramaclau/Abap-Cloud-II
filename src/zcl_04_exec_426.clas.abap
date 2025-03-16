@@ -338,28 +338,82 @@ CLASS zcl_04_exec_426 IMPLEMENTATION.
 *    data(go_comp) = NEW zcl_43_component_426(  ).
 *    go_comp->get_first( IMPORTING es_first = data(gv_first) ).
 ***
-    data(lo_manage) = new zcl_45_manage_426(  ).
+*    DATA(lo_manage) = NEW zcl_45_manage_426(  ).
+*
+*    DATA: lv_result TYPE i,
+*          lv_nun1   TYPE i VALUE 10,
+*          lv_num2   TYPE i.
+*
+*    TRY.
+**        lo_manage->check_user( sy-uname ).
+*
+*        lv_result = lv_nun1 / lv_num2.
+*
+*      CATCH zcx_45_auth_426 INTO DATA(lx_auth).
+*        out->write( lx_auth->get_text(  ) ).
+*
+*      CATCH cx_sy_zerodivide INTO DATA(lv_zerodiv).
+*        out->write( lv_zerodiv->get_text(  ) ).
+*        lv_num2 = 2.
+*        RETRY.
+*
+*      CATCH cx_root into data(lx_root).
+*        out->write( 'Root' ).
+*
+*    ENDTRY.
+*
+*    out->write( |FINISH: { lv_result }| ).
+***
+*    TRY.
+*        TRY.
+*
+*            lv_result = lv_nun1 / lv_num2.
+*
+*          CATCH zcx_45_auth_426 INTO DATA(lx_auth).
+*            out->write( lx_auth->get_text(  ) ).
+*          CLEANUP.
+*            out->write( |Cleanup...1:{ lv_result }| ).
+*        ENDTRY.
+*
+*      CATCH cx_sy_zerodivide INTO DATA(lv_zerodiv).
+*        out->write( lv_zerodiv->get_text(  ) ).
+*        lv_num2 = 2.
+*        RETRY.
+*      CLEANUP.
+*        out->write( |Cleanup...2:{ lv_result }| ).
+*    ENDTRY.
+*
+*    out->write( |FINISH: { lv_result }| ).
+***
+*    data(lo_exe) = NEW zcx_54_exception_426(  ).
+*    try.
+*        try.
+*            try.
+*                    lo_exe->raise_exception1(  ).
+*                CATCH zcx_51_exception1_426 into data(lx_exe_1).
+*                    lo_exe->raise_exception2( io_previous = lx_exe_1 ).
+*            ENDTRY.
+*          CATCH zcx_51_exception2_426 into data(lx_exe_2).
+*            lo_exe->raise_exception3( io_previous = lx_exe_2 ).
+*        ENDTRY.
+*       CATCH zcx_51_exception3_426 into data(lx_exe_3).
+*        out->write( |{ lx_exe_3->get_text(  ) }{ cl_abap_char_utilities=>newline }| ).
+*
+*        if lx_exe_3->previous is BOUND.
+*          out->write( |{ lx_exe_3->previous->get_text(  ) }\n| ).
+*        ENDIF.
+*        if lx_exe_3->previous is BOUND.
+*          out->write( |{ lx_exe_3->previous->previous->get_text(  ) }\n| ).
+*        ENDIF.
+*
+*
+*    ENDTRY.
+***
+    data(lo_business) = new zcl_55_business_426(  ).
 
-    data: lv_result type i,
-          lv_nun1   type i value 10,
-          lv_num2   type i.
+    lo_business->get_factorial( EXPORTING iv_number = 5
+                                IMPORTING ev_factorial = data(lv_factorial) ).
 
-    TRY.
-*        lo_manage->check_user( sy-uname ).
-
-        lv_result = lv_nun1 / lv_num2.
-
-      CATCH zcx_45_auth_426 INTO data(lx_auth).
-       out->write( lx_auth->get_text(  ) ).
-
-       CATCH cx_sy_zerodivide into data(lv_zerodiv).
-        out->write( lv_zerodiv->get_text(  ) ).
-        lv_num2 = 2.
-        RETRY.
-
-   ENDTRY.
-
-   out->write( |FINISH: { lv_result }| ).
-
+    out->write( lv_factorial ).
   ENDMETHOD.
 ENDCLASS.
