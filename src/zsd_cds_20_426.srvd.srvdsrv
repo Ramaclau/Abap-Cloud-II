@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZSD_CDS_20_426 {
+  expose ZI_CDS_20_426 as Travel;
+}
