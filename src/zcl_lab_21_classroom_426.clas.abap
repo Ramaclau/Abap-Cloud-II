@@ -1,22 +1,13 @@
-CLASS zcl_lab_21_classroom_426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PROTECTED .
+class ZCL_LAB_21_CLASSROOM_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS classroom RETURNING VALUE(rv_classroom) type string.
-
-  PROTECTED SECTION.
-
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_21_CLASSROOM_426 IMPLEMENTATION.
-
-
-  METHOD classroom.
-    rv_classroom = 'Art'.
-  ENDMETHOD.
 ENDCLASS.

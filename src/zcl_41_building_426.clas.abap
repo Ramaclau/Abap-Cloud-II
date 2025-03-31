@@ -1,21 +1,13 @@
-CLASS zcl_41_building_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_41_BUILDING_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    EVENTS blocked_entrance EXPORTING value(ev_entry) type string.
-
-    METHODS clse_entry.
-
-    data entry TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_41_building_426 IMPLEMENTATION.
-  METHOD clse_entry.
-    raise EVENT blocked_entrance EXPORTING ev_entry = me->entry.
-  ENDMETHOD.
 
+
+CLASS ZCL_41_BUILDING_426 IMPLEMENTATION.
 ENDCLASS.

@@ -1,4 +1,4 @@
-INTERFACE zif_lab_04_employee_426
-  PUBLIC .
-    METHODS GET_EMPLOYEES_COUNT RETURNING VALUE(rv_num_emp) TYPE string.
-ENDINTERFACE.
+interface ZIF_LAB_04_EMPLOYEE_426
+  public .
+
+endinterface.

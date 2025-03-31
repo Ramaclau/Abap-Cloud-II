@@ -1,6 +1,4 @@
-INTERFACE zif_04_document_426
-  PUBLIC .
+interface ZIF_04_DOCUMENT_426
+  public .
 
-    METHODS set_sales_doc IMPORTING iv_sales type string.
-
-ENDINTERFACE.
+endinterface.

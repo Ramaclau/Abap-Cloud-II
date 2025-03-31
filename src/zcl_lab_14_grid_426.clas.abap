@@ -1,24 +1,13 @@
-CLASS zcl_lab_14_grid_426 DEFINITION INHERITING FROM zcl_lab_13_view_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_14_GRID_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    METHODS constructor IMPORTING IV_BOX type string.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_14_GRID_426 IMPLEMENTATION.
-
-
-  METHOD constructor.
-
-    super->constructor( iv_view_type = view_type ).
-
-  ENDMETHOD.
 ENDCLASS.

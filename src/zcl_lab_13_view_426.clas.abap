@@ -1,24 +1,13 @@
-CLASS zcl_lab_13_view_426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_13_VIEW_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  METHODS constructor IMPORTING IV_VIEW_TYPE type string.
-
-  PROTECTED SECTION.
-    data: VIEW_TYPE TYPE string,
-          BOX       TYPE string.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_13_VIEW_426 IMPLEMENTATION.
-
-
-  METHOD constructor.
-    view_type = iv_view_type.
-  ENDMETHOD.
 ENDCLASS.

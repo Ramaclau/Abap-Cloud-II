@@ -1,13 +1,13 @@
-CLASS zcl_lab_37_screen_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_37_SCREEN_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    data screen_type TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_37_screen_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_37_SCREEN_426 IMPLEMENTATION.
 ENDCLASS.

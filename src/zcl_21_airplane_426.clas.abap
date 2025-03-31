@@ -1,12 +1,10 @@
-CLASS zcl_21_airplane_426 DEFINITION ABSTRACT
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_21_AIRPLANE_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS airplane_type ABSTRACT RETURNING VALUE(rv_airplane) type string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

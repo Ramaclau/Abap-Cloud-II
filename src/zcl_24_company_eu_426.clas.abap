@@ -1,21 +1,13 @@
-CLASS zcl_24_company_eu_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_24_COMPANY_EU_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    INTERFACES zif_08_company_426 .
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_24_COMPANY_EU_426 IMPLEMENTATION.
-
-
-  METHOD zif_08_company_426~define_company.
-    rv_company = 'Company EU'.
-  ENDMETHOD.
 ENDCLASS.

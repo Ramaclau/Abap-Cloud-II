@@ -1,19 +1,13 @@
-CLASS zcl_lab_51_wz_friend_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC
-  global FRIENDS zcl_lab_50_work_zone426.
+class ZCL_LAB_51_WZ_FRIEND_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    METHODS GET_HELPER.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_51_wz_friend_426 IMPLEMENTATION.
-  METHOD get_helper.
 
-  ENDMETHOD.
 
+CLASS ZCL_LAB_51_WZ_FRIEND_426 IMPLEMENTATION.
 ENDCLASS.

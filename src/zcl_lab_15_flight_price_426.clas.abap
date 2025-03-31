@@ -1,30 +1,13 @@
-CLASS zcl_lab_15_flight_price_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_15_FLIGHT_PRICE_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    data MT_FLIGHTS TYPE STANDARD TABLE OF /DMO/FLIGHT.
-
-    METHODS ADD_PRICE IMPORTING add_price TYPE /DMO/FLIGHT.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_15_FLIGHT_PRICE_426 IMPLEMENTATION.
-
-
-  METHOD add_price.
-    select from /DMO/FLIGHT
-        FIELDS *
-        into table @mt_flights.
-
-
-
-
-  ENDMETHOD.
 ENDCLASS.

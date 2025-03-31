@@ -1,24 +1,13 @@
-CLASS zcl_lab_11_system_426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_11_SYSTEM_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    data ARCHITECTURE TYPE string VALUE '64BITS'.
-
-    METHODS GET_ARCHITECTURE RETURNING VALUE(rv_arch) TYPE string.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_11_SYSTEM_426 IMPLEMENTATION.
-
-
-  METHOD get_architecture.
-
-  ENDMETHOD.
 ENDCLASS.

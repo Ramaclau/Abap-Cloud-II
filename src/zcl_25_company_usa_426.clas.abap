@@ -1,21 +1,13 @@
-CLASS zcl_25_company_usa_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_25_COMPANY_USA_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    INTERFACES zif_08_company_426 .
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_25_COMPANY_USA_426 IMPLEMENTATION.
-
-
-  METHOD zif_08_company_426~define_company.
-    rv_company = 'Company USA'.
-  ENDMETHOD.
 ENDCLASS.

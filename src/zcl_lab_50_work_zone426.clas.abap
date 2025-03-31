@@ -1,22 +1,13 @@
-CLASS zcl_lab_50_work_zone426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_50_WORK_ZONE426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    METHODS SET_WORK_ZONE IMPORTING es_work_zone type string.
-
-    data work_zone type ty_work_zone.
-
-    data lv_lcl_helper type ty_work_zone.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_50_work_zone426 IMPLEMENTATION.
-  METHOD set_work_zone.
 
-  ENDMETHOD.
 
+CLASS ZCL_LAB_50_WORK_ZONE426 IMPLEMENTATION.
 ENDCLASS.

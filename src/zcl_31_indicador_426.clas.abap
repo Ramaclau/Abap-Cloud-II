@@ -1,15 +1,13 @@
-CLASS zcl_31_indicador_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_31_INDICADOR_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    data vat_ind TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_31_indicador_426 IMPLEMENTATION.
+CLASS ZCL_31_INDICADOR_426 IMPLEMENTATION.
 ENDCLASS.

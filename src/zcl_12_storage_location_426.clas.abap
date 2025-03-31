@@ -1,23 +1,13 @@
-CLASS zcl_12_storage_location_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC GLOBAL FRIENDS zcl_11_planr_426.
+class ZCL_12_STORAGE_LOCATION_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    data product TYPE string.
-    METHODS set_product IMPORTING iv_product TYPE string.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_12_STORAGE_LOCATION_426 IMPLEMENTATION.
-
-
-  METHOD set_product.
-
-    product = iv_product.
-
-  ENDMETHOD.
 ENDCLASS.

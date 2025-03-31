@@ -1,25 +1,13 @@
-CLASS zcl_lab_42_screen DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_42_SCREEN definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  data pos type i.
-
-  EVENTS TOUCH_SCREEN EXPORTING value(ev_pos) type i.
-
-  METHODS ELEMENT_SELECTED.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_lab_42_screen IMPLEMENTATION.
-  METHOD element_selected.
-    RAISE EVENT TOUCH_SCREEN EXPORTING ev_pos = me->pos.
-  ENDMETHOD.
-
+CLASS ZCL_LAB_42_SCREEN IMPLEMENTATION.
 ENDCLASS.

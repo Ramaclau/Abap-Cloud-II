@@ -1,24 +1,13 @@
-CLASS zcl_13_ny_plant_426 DEFINITION INHERITING FROM zcl_11_planr_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_13_NY_PLANT_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    METHODS get_product_sl.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_13_NY_PLANT_426 IMPLEMENTATION.
-
-
-  METHOD get_product_sl.
-    data(lo_storage) = NEW zcl_12_storage_location_426(  ).
-    lo_storage->product = 'PC'.
-
-  ENDMETHOD.
 ENDCLASS.

@@ -1,12 +1,13 @@
-CLASS zcl_33_record__426 DEFINITION INHERITING FROM zcl_32_contract_cntr__426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_33_RECORD__426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_33_record__426 IMPLEMENTATION.
+
+
+CLASS ZCL_33_RECORD__426 IMPLEMENTATION.
 ENDCLASS.

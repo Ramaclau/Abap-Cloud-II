@@ -1,32 +1,13 @@
-CLASS zcl_09_citizen_426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PROTECTED .
+class ZCL_09_CITIZEN_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    METHODS set_id FINAL IMPORTING iv_id TYPE i.
-
-    METHODS get_instance RETURNING VALUE(ro) TYPE REF TO zcl_09_citizen_426.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    CLASS-DATA product type string.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_09_CITIZEN_426 IMPLEMENTATION.
-
-
-  METHOD get_instance.
-
-
-
-  ENDMETHOD.
-
-
-  METHOD set_id.
-
-  ENDMETHOD.
 ENDCLASS.

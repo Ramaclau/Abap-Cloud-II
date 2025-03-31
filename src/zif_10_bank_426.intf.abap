@@ -1,7 +1,4 @@
-INTERFACE zif_10_bank_426
-  PUBLIC .
-    EVENTS new_transfer.
+interface ZIF_10_BANK_426
+  public .
 
-    CONSTANTS office type string value 'New York'.
-
-ENDINTERFACE.
+endinterface.

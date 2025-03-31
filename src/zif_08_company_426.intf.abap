@@ -1,4 +1,4 @@
-INTERFACE zif_08_company_426
-  PUBLIC .
-    METHODS define_company RETURNING VALUE(rv_company) TYPE string.
-ENDINTERFACE.
+interface ZIF_08_COMPANY_426
+  public .
+
+endinterface.

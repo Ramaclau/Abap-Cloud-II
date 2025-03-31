@@ -1,19 +1,13 @@
-CLASS zcl_32_contract_cntr__426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_32_CONTRACT_CNTR__426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    INTERFACES zif_09_contract_426.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_32_contract_cntr__426 IMPLEMENTATION.
 
-  METHOD zif_09_contract_426~create_contract.
-    me->zif_09_contract_426~contract_type = iv_cntr_type.
-  ENDMETHOD.
 
+CLASS ZCL_32_CONTRACT_CNTR__426 IMPLEMENTATION.
 ENDCLASS.

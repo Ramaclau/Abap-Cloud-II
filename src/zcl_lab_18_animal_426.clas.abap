@@ -1,21 +1,13 @@
-CLASS zcl_lab_18_animal_426 DEFINITION
-  PUBLIC
+class ZCL_LAB_18_ANIMAL_426 definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-
-  METHODS WALK RETURNING VALUE(rv_walk) TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_18_ANIMAL_426 IMPLEMENTATION.
-
-
-  METHOD walk.
-    rv_walk = 'The animals walks'.
-  ENDMETHOD.
 ENDCLASS.

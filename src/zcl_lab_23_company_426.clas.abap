@@ -1,13 +1,10 @@
-CLASS zcl_lab_23_company_426 DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC
-  GLOBAL FRIENDS zcl_lab_24_partner_426.
+class ZCL_LAB_23_COMPANY_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    data CAPITAL type string.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

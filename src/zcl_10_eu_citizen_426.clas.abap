@@ -1,11 +1,10 @@
-CLASS zcl_10_eu_citizen_426 DEFINITION INHERITING FROM zcl_09_citizen_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_10_EU_CITIZEN_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

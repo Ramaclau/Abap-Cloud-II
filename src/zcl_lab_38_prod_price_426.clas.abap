@@ -1,13 +1,13 @@
-CLASS zcl_lab_38_prod_price_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_38_PROD_PRICE_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    data price TYPE i.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_38_prod_price_426 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_38_PROD_PRICE_426 IMPLEMENTATION.
 ENDCLASS.

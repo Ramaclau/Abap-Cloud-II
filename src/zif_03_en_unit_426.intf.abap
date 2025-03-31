@@ -1,6 +1,4 @@
-INTERFACE zif_03_en_unit_426
-  PUBLIC .
+interface ZIF_03_EN_UNIT_426
+  public .
 
-    METHODS dimensions_inches RETURNING VALUE(rv_unit) type zfloat.
-
-ENDINTERFACE.
+endinterface.

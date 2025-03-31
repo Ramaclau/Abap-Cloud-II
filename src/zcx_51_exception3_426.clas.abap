@@ -1,13 +1,13 @@
-CLASS zcx_51_exception3_426 DEFINITION
-  PUBLIC
-  INHERITING FROM cx_static_check
-  FINAL
-  CREATE PUBLIC .
+class ZCX_51_EXCEPTION3_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcx_51_exception3_426 IMPLEMENTATION.
+
+
+CLASS ZCX_51_EXCEPTION3_426 IMPLEMENTATION.
 ENDCLASS.

@@ -1,20 +1,13 @@
-CLASS zcl_22_cargoplane_426 DEFINITION  INHERITING FROM zcl_21_airplane_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_22_CARGOPLANE_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS: airplane_type REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_22_CARGOPLANE_426 IMPLEMENTATION.
-
-
-  METHOD airplane_type.
-    rv_airplane = 'Cargo Plane'.
-  ENDMETHOD.
 ENDCLASS.

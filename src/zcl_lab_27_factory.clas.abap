@@ -1,21 +1,13 @@
-CLASS zcl_lab_27_factory DEFINITION ABSTRACT
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_27_FACTORY definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS MERCHANDISE_OUTPUT RETURNING VALUE(RV_MERCHENDISE) type string.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_27_FACTORY IMPLEMENTATION.
-
-
-  METHOD merchandise_output.
-    rv_merchendise = 'MERCHANDISE_OUTPUT'.
-  ENDMETHOD.
 ENDCLASS.

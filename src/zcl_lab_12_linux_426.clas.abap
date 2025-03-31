@@ -1,13 +1,10 @@
-CLASS zcl_lab_12_linux_426 DEFINITION INHERITING FROM zcl_lab_11_system_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_12_LINUX_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

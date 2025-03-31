@@ -1,21 +1,13 @@
-CLASS zcl_lab_19_lion_426 DEFINITION INHERITING FROM zcl_lab_18_animal_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_19_LION_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS walk REDEFINITION.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_19_LION_426 IMPLEMENTATION.
-
-
-  METHOD walk.
-    rv_walk = 'The lion walks'.
-  ENDMETHOD.
 ENDCLASS.

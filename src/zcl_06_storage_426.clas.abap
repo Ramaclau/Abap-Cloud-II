@@ -1,11 +1,10 @@
-CLASS zcl_06_storage_426 DEFINITION INHERITING FROM zcl_05_plant_426
-  PUBLIC
+class ZCL_06_STORAGE_426 definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

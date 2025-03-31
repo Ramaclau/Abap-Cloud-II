@@ -1,23 +1,13 @@
-CLASS zcl_lab_43_navigation DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_43_NAVIGATION definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    data: pos type i,
-          log type string.
-
-
-    METHODS ON_TOUCH_SCREEN for EVENT TOUCH_SCREEN of zcl_lab_42_screen
-                        IMPORTING ev_pos.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_43_navigation IMPLEMENTATION.
-  METHOD on_touch_screen.
-    me->pos = ev_pos.
-    me->log = 'H10 V15'.
-  ENDMETHOD.
 
+
+CLASS ZCL_LAB_43_NAVIGATION IMPLEMENTATION.
 ENDCLASS.

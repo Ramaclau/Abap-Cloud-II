@@ -1,21 +1,13 @@
-CLASS zcl_39_mail_426 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_39_MAIL_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    class-EVENTS new_mail EXPORTING VALUE(ev_subject) type string.
-
-    class-METHODS compose_mail.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_39_mail_426 IMPLEMENTATION.
-  METHOD compose_mail.
-    raise EVENT new_mail EXPORTING
-                ev_subject = |ABAP programmer: { cl_abap_context_info=>get_system_time(  ) }|.
-  ENDMETHOD.
 
+
+CLASS ZCL_39_MAIL_426 IMPLEMENTATION.
 ENDCLASS.

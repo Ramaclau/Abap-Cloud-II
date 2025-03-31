@@ -1,17 +1,13 @@
-CLASS zcl_lab_30_org_germany_426 DEFINITION INHERITING FROM zcl_lab_29_organization_426
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_30_ORG_GERMANY_426 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS GET_LOCATION REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zcl_lab_30_org_germany_426 IMPLEMENTATION.
-  METHOD get_location.
-    rv_location = 'Germany'.
-  ENDMETHOD.
 
+
+CLASS ZCL_LAB_30_ORG_GERMANY_426 IMPLEMENTATION.
 ENDCLASS.
